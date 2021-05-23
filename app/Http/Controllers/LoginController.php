@@ -26,7 +26,7 @@ class LoginController extends Controller {
     private function loginDetails(string $inputEmail, string $inputPassword): bool {
 
         $loginValidation = false;
-        $loginDetailsArray = ['ubuvolt@gmail.com' => 'Hertiet#42'];
+        $loginDetailsArray = ['ubuvolt@gmail.com' => 'asdf'];
 
         if (array_key_exists($inputEmail, $loginDetailsArray)) {
             if ($loginDetailsArray[$inputEmail] == $inputPassword) {
